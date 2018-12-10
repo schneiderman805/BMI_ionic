@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CalculatorPage } from '../calculator/calculator'
 import { AboutPage } from '../about/about';
 
 
@@ -7,6 +7,8 @@ import { AboutPage } from '../about/about';
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
+  calculatorTab = CalculatorPage;
+  aboutTab = AboutPage
 
   
   tab2Root = AboutPage;
