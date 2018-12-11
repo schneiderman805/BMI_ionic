@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-
+import { CalculatorPage } from '../calculator/calculator'
 import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
+
 
 @Component({
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
+  calculatorTab = CalculatorPage;
+  aboutTab = AboutPage
 
-  tab1Root = HomePage;
+  
   tab2Root = AboutPage;
-  tab3Root = ContactPage;
-
+  
   constructor() {
 
   }
